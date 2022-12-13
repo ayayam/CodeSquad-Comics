@@ -134,9 +134,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Aya Yamamoto - aya.s.yamamoto@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/CodeSquad-Boston/course-project-ayayam](https://github.com/CodeSquad-Boston/course-project-ayayam)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
