@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSquad Comics</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
+            </a>
+        <nav>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>UPDATE COMICS</h1>
+    <form>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" value="title value stored in database">
+    <p>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" value="author value stored in database">
+    </p>
+    <p>
+    <label for="publisher">Publisher</label>
+    <select id="publisher" name="publisher">
+        <option value="boomxBox">BOOM! Box</option>
+        <option value="dcComics">DC Comics</option>
+        <option value="harryN.Abrams">Harry N. Abrams</option>
+        <option value="iconBooks">Icon Books</option>
+        <option value="imageComics">Image Comics</option>
+        <option value="marvel">Marvel</option>
+        <option value="simonSchuster">Simon & Schuster</option>
+        <option value="topShelfProductions">Top Shelf Productions</option>
+        <option value="vizMediaLlc">VIZ Media LLC</option>
+        <option value="database" selected>publisher value stored in database</option>
+    </select>
+    </p>
+    <p>
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" value="genre data stored in database">
+    </p>
+    <p>
+    <label for="pages">Number of pages:</label>
+    <input type="number" id="pages" name="pages" value="255">
+    </p>
+    <p>
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" name="rating" value="5" min="0" max="100">
+    </p>
+    <p>
+    <label for="synopsis">Synopsis:</label>
+    <textarea id="synopsis" name="synopsis" value="synopsis value stored in database"></textarea>
+    </p>
+    
+    <p>
+    <input type="submit">
+    </p>
+    </form>
+
+    <footer>
+        <h4>VISIT US</h4>
+        <address>CodeSquad Comics
+            <br>
+            123 Dorchester Avenue
+            <br>
+            Boston, MA 02124
+        </address>
+
+        <h4>LINKS</h4>
+        <a href="index.html">Home</a>
+        <br>
+        <a href="about.html">About</a>
+        <br>
+        <a href="login.html">Login</a>
+
+        <h4>FOLLOW US</h4>
+        <a href="#">Facebook</a>
+        <br>
+        <a href="#">Instagram</a>
+        <br>
+        <a href="#">Twitter</a>
+
+        <h4>A PRODUCT OF</h4>
+        <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer"><img src="public/images/CodeSquad-logo-a.png" alt="CodeSquad logo"></a>
+    </footer>
+</body>
+</html>
