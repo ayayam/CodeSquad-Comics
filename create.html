@@ -20,20 +20,22 @@
             </ul>
         </nav>
         </header>
-        <h1>CREATE NEW COMIC</h1>
-        <form action="#">
+
+        <div class="main-container create-body">
+        <h1 class="create-body-title">CREATE NEW COMIC</h1>
+        <form class="create-form" action="#">
             <br>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" placeholder="Title">
-            <br>
-            <br>
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" placeholder="Author">
+            <label for="title" class="create-label">Title:</label>
+            <input type="text" class="create-input" id="title" name="title" placeholder="Title">
             <br>
             <br>
-            <label for="publisher">Publisher:</label>
-            <select id="publisher" name="publisher">
-                <option value="select" disabled>Select</option>
+            <label for="author" class="create-label">Author:</label>
+            <input type="text" class="create-input" id="author" name="author" placeholder="Author">
+            <br>
+            <br>
+            <label for="publisher" class="create-label">Publisher:</label>
+            <select id="publisher" class="create-select" name="publisher">
+                <option value="select">Select</option>
                 <option value="boomBox">BOOM! Box</option>
                 <option value="dcComics">DC Comics</option>
                 <option value="HarryN.Abrams">Harry N. Abrams</option>
@@ -46,27 +48,28 @@
             </select>
             <br>
             <br>
-            <label for="genre">Genre:</label>
-            <input type="text" id="genre" name="genre" placeholder="Genre">
+            <label for="genre" class="create-label">Genre:</label>
+            <input type="text" class="create-input" id="genre" name="genre" placeholder="Genre">
             <br>
             <br>
-            <label for="pages">Number of pages:</label>
-            <input type="text" id="pages" name="pages" placeholder="Number of pages">
+            <label for="pages" class="create-label">Number of pages:</label>
+            <input type="text" class="create-input" id="pages" name="pages" placeholder="Number of pages">
             <br>
             <br>
-            <label for="rating">Rating:</label>
-            <input type="number" id="rating" name="rating" min="0" max="100">
+            <label for="rating" class="create-label">Rating:</label>
+            <input type="number" class="create-input" id="rating" name="rating" min="0" max="100" placeholder="number (0-5)">
             <br>
             <br>
-            <label for="synopsis">Synopsis:</label>
-            <textarea id="synopsis" name="synopsis" placeholder="Synopsis"></textarea>
+            <label for="synopsis" class="create-label">Synopsis:</label>
+            <textarea id="synopsis" class="create-synopsis" name="synopsis" placeholder="Synopsis"></textarea>
             <br>
             <br>
-            <br>
-            <input type="submit">
+            <input type="submit" class="yellow-button create-submit">
         </form>
+        </div>
 
         <footer class="footer">
+            <div class="footer-section">
             <p class="footer-labels"><strong>VISIT US</strong></p>
             <address>CodeSquad Comics
                 <br>
@@ -74,25 +77,33 @@
                 <br>
                 Boston, MA 02124
             </address>
-    
+            </div>
+
+            <div class="footer-section">
             <p class="footer-labels"><strong>LINKS</strong></p>
-            <a class="foot-links" href="index.html">Home</a>
+            <a class="foot-link" href="index.html">Home</a>
             <br>
-            <a class="foot-links" href="about.html">About</a>
+            <a class="foot-link" href="about.html">About</a>
             <br>
-            <a class="foot-links" href="login.html">Login</a>
-    
+            <a class="foot-link" href="login.html">Login</a>
+            </div>
+
+            <div class="footer-section">
             <p class="footer-labels"><strong>FOLLOW US</strong></p>
-            <a class="foot-links" href="#">Facebook</a>
+            <a class="foot-link" href="#">Facebook</a>
             <br>
-            <a class="foot-links" href="#">Instagram</a>
+            <a class="foot-link" href="#">Instagram</a>
             <br>
-            <a class="foot-links" href="#">Twitter</a>
-    
+            <a class="foot-link" href="#">Twitter</a>
+            </div>
+
+            <div class="footer-section">
             <p class="footer-labels"><strong>A PRODUCT OF</strong></p>
             <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
                 <img class="foot-logo" src="images/CodeSquad-logo-a.png" alt="CodeSquad logo">
             </a>
+            </div>
+
         </footer>
 </body>
 </html>
