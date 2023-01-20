@@ -22,7 +22,7 @@ body {
     border: solid 5px var(--blue);
     background-color: var(--white);
     margin: 5% auto;
-    width: 85vw;
+    width: 80vw;
 }
 
 
@@ -42,55 +42,90 @@ textarea {
 /* Header navbar */
 .header {
     background-color: var(--blue);
+    display: flex;
 }
 
 .header-logo {
-    width: 20%;
-    margin: 1.5%;
+    display: flex;
+    max-width: 50%;
+    
+}
+
+.navbar-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
 }
 
 .navbar {
-    padding: 0 0 2px 0;
-    width: 2000px;
+    display: flex;
+    background-color: var(--blue);
+    height: 120px
 }
 
 .nav-link {
+    
     color: var(--white);
     text-decoration: none;
 }
 
+.navlinks {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
 li {
     list-style: none;
-    display: inline-block;
-    margin-left: 3%;
-    margin-right: 3%;
 } 
 
 /* footer */
 .footer {
+    display: flex;
+    justify-content: space-evenly;
     color: var(--white);
     background-color: var(--blue);
     padding: 2% 1%;
-    margin-top: 3%;
     border-top: solid var(--yellow) 6px;
 }
 
 .footer-section {
-    display: inline-block;
-    margin: 0 7% 2% 2%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.visit {
+    flex: 1.5;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+.links {
+    display: flex;
+    
+    flex: 1;
+    
 }
 
 .footer-labels {
     color: var(--yellow);
 }
+
 .foot-link {
     color: var(--white);
     text-decoration: none;  
 }
 
+.product {
+    margin-right: 2%;
+}
+
 .foot-logo {
-    width: 150px;
-    height: 70px;
+    display: flex;
+    max-width: 75%;
 }
 
 /* Header and footer links' actions */
@@ -115,12 +150,14 @@ li {
 
 /* ABOUT.HTML */
 .container-about {
+    display: flex;
+    flex-direction: column;
     padding: 40px;
 }
 .about-h1, 
 .about-h2 {
     text-align: center;
-    color: var(--blue)
+    color: var(--blue);
 }
 
 .about-h1 {
@@ -130,13 +167,18 @@ li {
 .about-collection {
     list-style: disc;
     display: list-item;
-    margin-left: 0;
+    margin-left: 35%;
 }
 
 .about-bottom {
     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
 }
-
+.collection-list {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ADMIN.HTML */
 .admin-container-top {
@@ -232,6 +274,8 @@ td {
 
 /* hunter.html whole comic card */
 .hunter-hunter {
+    display: flex;
+    flex-direction: column;
     width: 450px;
     border-radius: 30px;
     margin: 5% auto;
@@ -239,33 +283,37 @@ td {
 
 /*hunter.html top-half of comic card */
 .top-half {
+    display: flex;
+    flex-direction: column;
     background-color: var(--blue);
     background-size: 60%;
     border-radius: 30px 30px 0 0;
     border: solid var(--yellow) 3px;
-    width: 450px;
-    height: 520px;
+    padding-bottom: 8%;
+    /* width: 450px;
+    height: 520px; */
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     color: var(--yellow);
-    text-align: center;
     padding-top: 5%;
 }
 
 .gon-cover {
-    width: 290px;
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    align-self: center;
+    max-width: 70%;
+    max-height: 80%;
     border-radius: 20px;
 }
 
 /* hunter.html bottom half of comic card */
 .bottom-half {
+    display: flex;
+    flex-direction: column;
     padding: 7%;
-    width: 387px;
     background-color: var(--white);
     border-radius: 0 0 30px 30px;
     font-size: 1rem;
@@ -279,9 +327,7 @@ td {
     text-decoration: underline;
 }
 
-.hunter-data {
-    margin: 5% 0;
-}
+
 
 /* INDEX.HTML */
 
@@ -305,8 +351,43 @@ td {
     padding-bottom: 20px;
 }
 
+.comic-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.comic-info {
+    text-align: center;
+    max-width: 200px;
+    margin-top: 10%;
+}
+
 .index-display {
-    margin: 0 0 6% 4%;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.details:link,
+.details:visited {
+    text-decoration: none;
+    color: var(--blue)
+}
+.details:hover {
+    font-weight: bold;
+    color: var(--teal);
+}
+.details:active {
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--yellow);
 }
 
 /* LOGIN.HTML */
