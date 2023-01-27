@@ -5,7 +5,14 @@
     --blue: #063C5E;
     --grey: #C2C2C2;
     --white: #fff;
+    --hnf-font: 'Fredericka the Great', cursive;
+    --main-font: 'Open Sans', sans-serif;
 }
+
+/* Google Fonts */
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+
 
 /* GLOBAL CSS */
 body {
@@ -16,6 +23,7 @@ body {
     box-sizing: border-box;
     font-size: 1.4rem;
     background-image: linear-gradient(#fff, var(--lTeal), var(--teal)); 
+    font-family: var(--main-font);
 }
 
 .main-container{
@@ -39,6 +47,13 @@ textarea {
     font-style: italic;
 }
 
+h1,
+h2 {
+    font-family: var(--hnf-font);
+    padding-top: 2%;
+    margin-bottom: 0;
+}
+
 /* Header navbar */
 .header {
     background-color: var(--blue);
@@ -48,7 +63,6 @@ textarea {
 .header-logo {
     display: flex;
     max-width: 50%;
-    
 }
 
 .navbar-logo {
@@ -61,11 +75,11 @@ textarea {
 .navbar {
     display: flex;
     background-color: var(--blue);
-    height: 120px
+    height: 120px;
+    font-family: var(--hnf-font);
 }
 
 .nav-link {
-    
     color: var(--white);
     text-decoration: none;
 }
@@ -89,6 +103,7 @@ li {
     background-color: var(--blue);
     padding: 2% 1%;
     border-top: solid var(--yellow) 6px;
+    font-family: var(--hnf-font);
 }
 
 .footer-section {
@@ -105,15 +120,26 @@ li {
 }
 .links {
     display: flex;
-    
     flex: 1;
-    
 }
 
 .footer-labels {
     color: var(--yellow);
 }
 
+/* FontAwesome icons */
+.fa-brands {
+    color: white;    
+    font-size: 1.5em;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start; 
+    width: 13vw;
+}
 .foot-link {
     color: var(--white);
     text-decoration: none;  
@@ -235,6 +261,10 @@ td {
 }
 
 /* CREATE.HTML */
+.create-body {
+    display: flex;
+    flex-direction: column;
+}
 
 .create-body-title {
     text-align: center;
@@ -294,11 +324,11 @@ td {
     height: 520px; */
 }
 
-.title {
-    display: flex;
-    justify-content: center;
+.hunter-title {
+    text-align: center;
+    font-size: 1.2em;
     color: var(--yellow);
-    padding-top: 5%;
+    
 }
 
 .gon-cover {
@@ -391,33 +421,50 @@ td {
 }
 
 /* LOGIN.HTML */
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
 .login-container-title {
     text-align: center;
     color: var(--blue);
 }
 
-.login-form {
-    width: 20%;
+
+.login-email,
+.login-pw {
+    width: 70vw;
+    align-self: center;
+    margin: 2%;
 }
 
 .login-label {
-    width: 42%;
+    align-self: center;
+    width: 28vw;
 }
 
 .login-input {
-    width: 30%;
+    align-self: center;
+    width: 20vw;
 }
 
 .login-submit {
-    margin-left: 45%;
-    margin-bottom: 4%;
+    width: 8vw;
+    align-self: center;
+    margin: 2%;
+    
 }
 
 /* UPDATE.HTML */
+.update-body {
+    display: flex;
+    flex-direction: column;
+}
 
 .update-title {
     text-align: center;
     color: var(--blue);
+    margin-bottom: 2%;
 }
 
 .update-label {
