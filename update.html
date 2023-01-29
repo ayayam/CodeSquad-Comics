@@ -23,6 +23,7 @@
             <li><a class="nav-link" href="about.html">ABOUT</a></li>
             <li><a class="nav-link" href="login.html">LOGIN</a></li>
         </ul>
+        <i class="fa fa-bars"></i>
     </nav>
     <header class="header">
     </header>
@@ -30,15 +31,19 @@
     <div class="main-container update-body">
         <h1 class="update-title">UPDATE COMIC</h1>
 
-        <form>
+        <form class="form update-form">
+    <ul>
+        <li class="form-list">
         <label for="title" class="update-label">Title:</label>
         <input type="text" class="update-input" id="title" name="title" value="title value stored in database">
+        </li>
         <br>
-        <br>
+        <li class="form-list">
         <label for="author" class="update-label">Author:</label>
         <input type="text" class="update-input" id="author" name="author" value="author value stored in database">
+        </li>
         <br>
-        <br>
+        <li class="form-list">
         <label for="publisher" class="update-label">Publisher:</label>
         <select id="publisher" class="select-publisher" name="publisher">
             
@@ -53,25 +58,32 @@
             <option value="vizMediaLlc">VIZ Media LLC</option>
             <option value="database" selected>publisher value stored in database</option>
         </select>
+        </li>
         <br>
-        <br>
+        <li class="form-list">
         <label for="genre" class="update-label">Genre:</label>
         <input type="text" class="update-input" id="genre" name="genre" value="genre data stored in database">
+        </li>
         <br>
-        <br>
+        <li class="form-list">
         <label for="pages" class="update-label">Number of pages:</label>
         <input type="text" class="update-input" id="pages" name="pages" value="pages stored in database">
+        </li>
         <br>
-        <br>
+        <li class="form-list">
         <label for="rating" class="update-label">Rating:</label>
         <input type="text" class="update-input" id="rating" name="rating" placeholder="rating stored in database">
+        </li>
         <br>
-        <br>
+        <li class="form-list textarea">
         <label for="synopsis" class="update-label">Synopsis:</label>
         <textarea id="synopsis" class="synopsis" name="synopsis" placeholder="synopsis value stored in database"></textarea>
+        </li>
         <br>
-        <br>
+        <li class="submit-button">
         <input type="submit" class="yellow-button update-submit">
+        </li>
+    </ul>
         </form>
     </div>
     
