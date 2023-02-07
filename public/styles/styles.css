@@ -39,29 +39,28 @@ form {
     
 }
 
-label {
+.label {
     text-align: right;
     display: inline-block;
-    width: 38%;
+    width: 25vw;
+    min-width: 20vw;
 }
 
-input {
-    width: 25vw;
+.input {
+    width: 35vw;
+    min-width: 30vw;
     margin-left: 1%;
 }
 
-select {
-    width: 26vw;
+.select,
+.synopsis {
+    width: 36vw;
+    min-width: 31vw;
 }
 
 .form-list {
     display: flex;
     align-self: flex-end;
-}
-
-select,
-.synopsis {
-    margin-left: 1%;
 }
 
 textarea {
