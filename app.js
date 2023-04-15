@@ -10,25 +10,47 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
-    res.send("This route points to the Home page");
+    res.render('pages/index', {
+
+    });
 });
 
 app.get('/about', (req, res) => {
-    res.send("This route points to the About page");
+    res.render('pages/about', {
+
+    });
 });
 
 app.get('/login', (req, res) => {
-    res.send("This route points to the Login pages");
+    res.render('pages/login', {
+
+    });
 });
 
 app.get('/admin-console', (req, res) => {
-    res.send("This route points to the Admin Console page");
+    res.render('pages/admin-console', {
+
+    });
 });
 
 app.get('/admin-console/create-book', (req, res) => {
-    res.send("This route points to the Create page")
-})
+    res.render('pages/admin-console/create-book', {
 
+    });
+});
+
+app.get('admin-console/update-book/:id', (req, res) => {
+    let params = req.params;
+    res.render('pages/update', {
+        
+    })
+})
+app.get('/book/:id', (req, res) => {
+    let params = req.params;
+    res.render('pages/hunter', {
+
+    });
+});
 
 
 
