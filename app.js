@@ -10,25 +10,56 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('combined'));
 
 app.get('/', (req, res) => {
-    res.send("This route points to the Home page");
+    res.render('pages/index', {
+
+    });
 });
 
 app.get('/about', (req, res) => {
-    res.send("This route points to the About page");
+    res.render('pages/about', {
+
+    });
 });
 
 app.get('/login', (req, res) => {
-    res.send("This route points to the Login pages");
+    res.render('pages/login', {
+
+    });
 });
 
-app.get('/admin-console', (req, res) => {
-    res.send("This route points to the Admin Console page");
+app.get('/admin', (req, res) => {
+    res.render('pages/admin', {
+
+    });
 });
 
-app.get('/admin-console/create-book', (req, res) => {
-    res.send("This route points to the Create page")
+app.get('/create', (req, res) => {
+    res.render('pages/create', {
+
+    });
+});
+app.get('/update', (req, res) => {
+    res.render('pages/update'), {
+
+    };
+});
+app.get('/update/:id', (req, res) => {
+    let params = req.params;
+    res.render('pages/update', {
+        
+    })
 })
 
+app.get('/book', (req, res) => {
+    res.render('pages/book', {
+    });
+  });
+app.get('/book/:id', (req, res) => {
+    let params = req.params;
+    res.render(`pages/book`, {
+
+    });
+});
 
 
 
