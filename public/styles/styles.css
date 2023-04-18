@@ -1,0 +1,520 @@
+:root {
+    --teal: #006b6b;
+    --lTeal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    --grey: #C2C2C2;
+    --white: #fff;
+    --hnf-font: 'Fredericka the Great', cursive;
+    --main-font: 'Open Sans', sans-serif;
+}
+
+/* Google Fonts */
+/*font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+
+
+/* GLOBAL CSS */
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    background-image: linear-gradient(#fff, var(--lTeal), var(--teal)); 
+    font-family: var(--main-font);
+}
+
+.main-container{
+    border: solid 5px var(--blue);
+    background-color: var(--white);
+    margin: 5% auto;
+    width: 80vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.label {
+    text-align: right;
+    display: inline-block;
+    width: 25vw;
+    min-width: 20vw;
+}
+
+.input {
+    width: 35vw;
+    min-width: 30vw;
+    margin-left: 1%;
+}
+
+.select,
+.synopsis {
+    width: 36vw;
+    min-width: 31vw;
+}
+
+.form-list {
+    display: flex;
+    align-self: flex-end;
+}
+
+textarea {
+    resize: none;
+    width: 25.5vw;
+    height: 30vh;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+input[type=submit] {
+    width: fit-content;
+}
+.italics {
+    font-style: italic;
+}
+
+h1,
+h2 {
+    font-family: var(--hnf-font);
+    padding-top: 2%;
+    margin-bottom: 0;
+}
+
+/* Header navbar */
+
+.navbar {
+    display: flex;
+    background-color: var(--blue);
+    height: 20vh;
+    font-family: var(--hnf-font);
+}
+
+.navbar-logo {
+    /* flex: 1; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50%;
+    margin-left: 5%;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 40px;
+}
+
+.navlinks {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+} 
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .nav-link {
+        display: none;
+    }
+    .fa-bars {
+        color: var(--white);
+        justify-content: space-around;
+        align-self: center;
+        margin-right: 5%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-section {
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .admin-table-container {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .fa-bars {
+        visibility: hidden;
+    }
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 2% 1%;
+    border-top: solid var(--yellow) 6px;
+    font-family: var(--hnf-font);
+}
+
+.footer-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.visit {
+    flex: 1.5;
+    margin-bottom: 3%;
+    margin-left: 5%;
+}
+.links {
+    display: flex;
+    flex: 1;
+}
+
+.footer-labels {
+    color: var(--yellow);
+}
+
+/* FontAwesome icons */
+.fa-brands {
+    color: white;    
+    font-size: 1.5em;
+    
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start; 
+    width: 13vw;
+}
+.foot-link {
+    color: var(--white);
+    text-decoration: none;  
+}
+
+.product {
+    margin-right: 2%;
+}
+
+.foot-logo {
+    display: flex;
+    max-width: 75%;
+}
+
+/* Header and footer links' actions */
+.nav-link:visited,
+.foot-link:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.foot-link:hover {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+.nav-link:active,
+.foot-link:active {
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+/* ABOUT.HTML */
+.container-about {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.about-h1, 
+.about-h2 {
+    text-align: center;
+    color: var(--blue);
+}
+
+.about-h1 {
+    font-size: 2.5rem;
+}
+/* about.html collection details list */
+.about-collection {
+    list-style: disc;
+    display: list-item;
+    margin-left: 35%;
+}
+
+.about-bottom {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.collection-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ADMIN.HTML */
+
+.admin-container-top {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.admin-container-title {
+    color: var(--blue);
+    align-self: center;
+} 
+
+.admin-top-button {
+    display: flex;
+    align-self: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.new-comic {
+    width: fit-content;
+}
+
+.admin-table {
+    width: 80%;
+    border: 2px solid var(--blue);
+    margin: 0 auto 5% auto;
+    border-collapse: collapse;
+}
+
+.admin-table-head {
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+}
+
+.admin-table-body {
+    width: auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--grey)
+}
+
+th,
+td {
+    padding: 8px;
+    border: 2px solid var(--blue)
+}
+
+td {
+    font-size: 1.2rem;
+}
+
+.yellow-button {
+    background-color: var(--yellow);
+    padding: 5px 15px;
+    width: fit-content;
+    margin: auto;
+    display: block;
+}
+
+.blue-button {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 5px 20px;
+    width: fit-content;
+    margin: auto;
+    display: block;
+}
+
+/* CREATE.HTML */
+.create-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-body-title {
+    text-align: center;
+    color: var(--blue);
+    padding-top: 20px;
+}
+
+
+/* HUNTER.HTML */
+
+/* hunter.html whole comic card */
+.hunter-hunter {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 30px;
+    margin: 5% auto;
+}
+
+/*hunter.html top-half of comic card */
+.top-half {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    background-size: 60%;
+    border-radius: 30px 30px 0 0;
+    border: solid var(--yellow) 3px;
+    padding-bottom: 8%;
+    /* width: 450px;
+    height: 520px; */
+}
+
+.hunter-title {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--yellow);
+    
+}
+
+.gon-cover {
+    display: flex;
+    align-self: center;
+    max-width: 70%;
+    max-height: 80%;
+    border-radius: 20px;
+    margin-top: 8%;
+}
+
+/* hunter.html bottom half of comic card */
+.bottom-half {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    background-color: var(--white);
+    border-radius: 0 0 30px 30px;
+    font-size: 1rem;
+    border-right: solid 3px var(--yellow);
+    border-bottom: solid 3px var(--yellow);
+    border-left: solid 3px var(--yellow);
+}
+
+.bold-underline {
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+@media screen and (min-width: 1024px) {
+    .hunter-hunter {
+        flex-direction: row;
+        width: 90vw;
+    }
+    .top-half {
+        width: 150vw;
+        border-radius: 30px 0 0 30px;
+        border-right: none;
+    }
+    .bottom-half {
+        border-radius: 0 30px 30px 0;
+        border-top: solid 3px var(--yellow);
+        border-left: none;
+        padding: 3%;
+    }
+}
+
+
+/* INDEX.HTML */
+
+.index-top-title {
+    color: var(--blue);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.index-top-p {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.index-bottom-title {
+    color: var(--blue);
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.comic-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+.comic-info {
+    text-align: center;
+    max-width: 200px;
+    margin-top: 10%;
+}
+
+.index-display {
+    margin-left: 40%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+.details:link,
+.details:visited {
+    text-decoration: none;
+    color: var(--blue)
+}
+.details:hover {
+    font-weight: bold;
+    color: var(--teal);
+}
+.details:active {
+    font-weight: bold;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+/* LOGIN.HTML */
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+.login-container-title {
+    text-align: center;
+    color: var(--blue);
+}
+.login-submit-button {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+/* UPDATE.HTML */
+.update-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-title {
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 2%;
+}
+
+
