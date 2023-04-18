@@ -107,15 +107,19 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Browse your library by cover!
+Browse your collection by cover!
 
-[![Demo Screenshot 2](/public/images/Demo_Screenshot2.png)](https://github.com/ayayam/CodeSquad-Comics.git)
+[![Homepage Screenshot](/public/images/home_screenshot.png)](https://github.com/ayayam/CodeSquad-Comics.git)
 
+Create new entries and update existing comic book entries!
 
+[![Create Screenshot](/public/images/create_screenshot.png)](https://github.com/ayayam/CodeSquad-Comics.git)
+[![Update Screenshot](/public/images/update_screenshot.png)](https://github.com/ayayam/CodeSquad-Comics.git)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Check out the about page to see details about your collection!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+[![About Screenshot](/public/images/about_screenshot.png)](https://github.com/ayayam/CodeSquad-Comics.git)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
