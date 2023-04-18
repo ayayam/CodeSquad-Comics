@@ -70,7 +70,7 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-* [![Next][Next.js]](https://nextjs.org/)
+* [Next.js](https://nextjs.org/)
 * [Express.js](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose](https://mongoosejs.com/)
