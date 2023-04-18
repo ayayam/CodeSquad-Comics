@@ -53,7 +53,7 @@
 
 [![Demo Screenshot 2](/public/images/Demo_Screenshot2.png)](https://github.com/ayayam/CodeSquad-Comics.git)
 
-A web app that allows the user to keep a current record of their comic book library. The user can add a new title with corresponding details like author, synopsis, rating, etc., store the data in our database and allow an easy way to update or delete existing titles. Built to specifications provided by CodeSqad.
+A web app that allows the user to keep a current record of their comic book library. The user can add a new title with corresponding details like author, synopsis, rating, etc., store the data in our database and allow an easy way to update or delete existing titles. Built to specifications provided by CodeSquad.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
