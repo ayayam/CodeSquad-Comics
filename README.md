@@ -15,9 +15,9 @@
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/ayayam/CodeSquad-Comics.git">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/ayayam/CodeSquad-Comics.git">Request Feature</a>
   </p>
 </div>
 
@@ -53,16 +53,8 @@
 
 [![Demo Screenshot 2](/public/images/Demo_Screenshot2.png)](https://github.com/ayayam/CodeSquad-Comics.git)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+A web app that allows the user to keep a current record of their comic book library. The user can add a new title with corresponding details like author, synopsis, rating, etc., store the data in our database and allow an easy way to update or delete existing titles. Built to specifications provided by CodeSqad.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
