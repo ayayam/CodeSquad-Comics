@@ -91,14 +91,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/ayayam/CodeSquad-Comics.git
    ```
-2. Install NPM packages
+2. Install NPM package dependencies
    ```sh
-   npm install
+   npm install express ejs mongoose dotenv morgan 
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
