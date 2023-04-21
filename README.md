@@ -9,7 +9,7 @@
 
   <p align="center">
     Create, Read, Update and Delete your Comic Book Library!
-    <br />
+    <!-- <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -17,7 +17,7 @@
     ·
     <a href="https://github.com/ayayam/CodeSquad-Comics.git">Report Bug</a>
     ·
-    <a href="https://github.com/ayayam/CodeSquad-Comics.git">Request Feature</a>
+    <a href="https://github.com/ayayam/CodeSquad-Comics.git">Request Feature</a> -->
   </p>
 </div>
 
@@ -138,13 +138,9 @@ Project Link: [https://github.com/CodeSquad-Boston/course-project-ayayam](https:
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
+* [CodeSquad Boston](http://codesquad.org/)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Google Fonts](https://fonts.google.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
