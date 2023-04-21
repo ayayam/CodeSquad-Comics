@@ -62,10 +62,13 @@ A web app that allows the user to keep a current record of their comic book libr
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
+* [Node.js](https://nodejs.org/en)
 * [Express.js](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose](https://mongoosejs.com/)
+* [JavaScript](https://www.javascript.com/)
+* HTML
+* CSS
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
