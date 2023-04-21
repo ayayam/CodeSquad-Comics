@@ -1,5 +1,5 @@
 <div id="top"></div>
-
+[![LinkedIn][linkedin-shield]][linkedin-url]
 <!-- PROJECT LOGO -->
 <img src="/public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
 <br />
@@ -139,8 +139,12 @@ Project Link: [https://github.com/CodeSquad-Boston/course-project-ayayam](https:
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [CodeSquad Boston](http://codesquad.org/)
-* [GitHub Pages](https://pages.github.com)
+* [GitHub](https://github.com)
 * [Font Awesome](https://fontawesome.com)
 * [Google Fonts](https://fonts.google.com/)
+* [Img Shields](https://shields.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/ayayam
