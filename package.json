@@ -1,0 +1,32 @@
+{
+  "name": "course-project-ayayam",
+  "version": "1.0.0",
+  "description": "<div id=\"top\"></div>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSquad-Boston/course-project-ayayam.git"
+  },
+  "author": "Aya Yamamoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSquad-Boston/course-project-ayayam/issues"
+  },
+  "homepage": "https://github.com/CodeSquad-Boston/course-project-ayayam#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "uuid": "^9.0.0"
+  }
+}
