@@ -52,11 +52,19 @@ app.get('/update/:id', (req, res) => {
 
 app.get('/book', (req, res) => {
     res.render('pages/book', {
+
     });
   });
+
 app.get('/book/:id', (req, res) => {
     let params = req.params;
     res.render(`pages/book`, {
+
+    });
+});
+
+app.get('/admin-console/update-book/:id', (req, res) => {
+    res.render('pages/update', {
 
     });
 });
