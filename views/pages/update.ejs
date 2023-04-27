@@ -4,59 +4,61 @@
     <div class="main-container update-body">
         <h1 class="update-title">UPDATE COMIC</h1>
 
-        <form class="form update-form">
-    <ul>
-        <li class="form-list">
-        <label for="title" class="label">Title:</label>
-        <input type="text" class="input" id="title" name="title" value="title value stored in database">
-        </li>
+        <form class="form update-form" action="book" method="POST">
+            <label for="edit-image">Comic Book Coverpage</label>
+            <input type="text" id="edit-image"></input>
+        <ul>
+            <li class="form-list">
+                <label for="title" class="label">Title:</label>
+                <input type="text" class="input" id="title" name="title" value="title value stored in database">
+            </li>
         <br>
-        <li class="form-list">
-        <label for="author" class="label">Author:</label>
-        <input type="text" class="input" id="author" name="author" value="author value stored in database">
-        </li>
+            <li class="form-list">
+                <label for="author" class="label">Author:</label>
+                <input type="text" class="input" id="author" name="author" value="author value stored in database">
+            </li>
         <br>
-        <li class="form-list">
-        <label for="publisher" class="label">Publisher:</label>
-        <select id="publisher" class="select" name="publisher">
+            <li class="form-list">
+                <label for="publisher" class="label">Publisher:</label>
+                <select id="publisher" class="select" name="publisher">
             
-            <option value="boomxBox">BOOM! Box</option>
-            <option value="dcComics">DC Comics</option>
-            <option value="harryN.Abrams">Harry N. Abrams</option>
-            <option value="iconBooks">Icon Books</option>
-            <option value="imageComics">Image Comics</option>
-            <option value="marvel">Marvel</option>
-            <option value="simonSchuster">Simon & Schuster</option>
-            <option value="topShelfProductions">Top Shelf Productions</option>
-            <option value="vizMediaLlc">VIZ Media LLC</option>
-            <option value="database" selected>publisher value stored in database</option>
-        </select>
-        </li>
+                    <option value="boomxBox">BOOM! Box</option>
+                    <option value="dcComics">DC Comics</option>
+                    <option value="harryN.Abrams">Harry N. Abrams</option>
+                    <option value="iconBooks">Icon Books</option>
+                    <option value="imageComics">Image Comics</option>
+                    <option value="marvel">Marvel</option>
+                    <option value="simonSchuster">Simon & Schuster</option>
+                    <option value="topShelfProductions">Top Shelf Productions</option>
+                    <option value="vizMediaLlc">VIZ Media LLC</option>
+                    <option value="database" selected>publisher value stored in database</option>
+                </select>
+            </li>
         <br>
-        <li class="form-list">
-        <label for="genre" class="label">Genre:</label>
-        <input type="text" class="input" id="genre" name="genre" value="genre data stored in database">
-        </li>
+            <li class="form-list">
+                <label for="genre" class="label">Genre:</label>
+                <input type="text" class="input" id="genre" name="genre" value="genre data stored in database">
+            </li>
         <br>
-        <li class="form-list">
-        <label for="pages" class="label">Number of pages:</label>
-        <input type="text" class="input" id="pages" name="pages" value="pages stored in database">
-        </li>
+            <li class="form-list">
+                <label for="pages" class="label">Number of pages:</label>
+                <input type="text" class="input" id="pages" name="pages" value="pages stored in database">
+            </li>
         <br>
-        <li class="form-list">
-        <label for="rating" class="label">Rating:</label>
-        <input type="text" class="input" id="rating" name="rating" placeholder="rating stored in database">
-        </li>
+            <li class="form-list">
+                <label for="rating" class="label">Rating:</label>
+                <input type="text" class="input" id="rating" name="rating" placeholder="rating stored in database">
+            </li>
         <br>
-        <li class="form-list textarea">
-        <label for="synopsis" class="label">Synopsis:</label>
-        <textarea id="synopsis" class="synopsis" name="synopsis" placeholder="synopsis value stored in database"></textarea>
-        </li>
+            <li class="form-list textarea">
+                <label for="synopsis" class="label">Synopsis:</label>
+                <textarea id="synopsis" class="synopsis" name="synopsis" placeholder="synopsis value stored in database"></textarea>
+            </li>
         <br>
-        <li class="submit-button">
-        <input type="submit" class="yellow-button update-submit">
-        </li>
-    </ul>
+            <li class="submit-button">
+                <input type="submit" class="yellow-button update-submit">
+            </li>
+        </ul>
         </form>
     </div>
     
