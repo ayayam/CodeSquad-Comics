@@ -13,9 +13,10 @@ app.use(morgan('combined'));
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended:true }));
 app.use(express.json());
-app.use('/', (req, res) => {
-    res.render('./routes/index-routes')
-})
+app.use('/', indexRoutes);
+// app.use('/', (req, res) => {
+//     res.render(indexRoutes)
+// });
 
 app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`);

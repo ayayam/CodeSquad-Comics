@@ -2,35 +2,35 @@
 <%- include('../partials/nav') -%>
       
 
-        <section class="main-container index-top">
-            <h1 class="index-top-title">CODESQUAD COMICS</h1>
-            <p class="index-top-p">CodeSquad Comics is a collection of graphic novels read by YOUR NAME. The site is intended to display comic book covers along with information about each
+    <section class="main-container index-top">
+        <h1 class="index-top-title">CODESQUAD COMICS</h1>
+        <p class="index-top-p">CodeSquad Comics is a collection of graphic novels read by YOUR NAME. The site is intended to display comic book covers along with information about each
                 book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below. Click on the cover image or the 
                 Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes 
                 meta information about this collection. Login is only available to the site administrator at this time.</p>
-        </section>
+    </section>
 
-        <div class="main-container index-bottom">
-        <section>
-            <h2 class="index-bottom-title">COMPLETE COLLECTION</h2>
-        </section>
+    <div class="main-container index-bottom">
+    <section>
+        <h2 class="index-bottom-title">COMPLETE COLLECTION</h2>
+    </section>
 
-        <div class="comic-collection">
-            <% for (book of data) { %>
-                <figure class="comic">
-                    <a href="book/<%= book._id %>">
-                        <img src="<%= data.image._id %>" alt="" style="width: 200px">
-                    </a>
-                    <figcaption class="comic-info">
-                        <p><em><%= book.title %></em></p>
-                        <p><%= book.author %></p>
-                        <p><%= book.rating %></p>
-                        <a class="details" href="book/<%= book._id">Details</a>
-                    </figcaption>
-                </figure>
-            <% } %>
+    <div class="comic-collection">
+        <% for (book of data) { %>
+            <figure class="comic">
+                <a href="book/<%= book._id %>">
+                    <img src="<%= data.image._id %>" alt="" style="width: 200px">
+                </a>
+                <figcaption class="comic-info">
+                    <p><em><%= book.title %></em></p>
+                    <p><%= book.author %></p>
+                    <p><%= book.rating %></p>
+                    <a class="details" href="book/<%= book._id">Details</a>
+                </figcaption>
+            </figure>
+        <% } %>
     </div>
-        <input type="button" class="yellow-button index-display" value="DISPLAY MORE">
-        </div>
+    <input type="button" class="yellow-button index-display" value="DISPLAY MORE">
+</div>
 
 <%- include('../partials/footer') -%>
