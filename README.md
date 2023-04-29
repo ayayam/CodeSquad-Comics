@@ -1,5 +1,5 @@
-<div id="top"></div>
 [![LinkedIn][linkedin-shield]][linkedin-url]
+<div id="top"></div>
 <!-- PROJECT LOGO -->
 <img src="/public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics logo">
 <br />
