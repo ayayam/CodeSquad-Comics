@@ -3,7 +3,11 @@ const data = require('../data/data');
 module.exports = {
     index: (req, res) => {
         res.render('pages/index', {
-            data: data,
+            image: data.image,
+            title: data.title,
+            author: data.author,
+            rating: data.rating,
+            books: data,
         });
     },
     about: (req, res) => {

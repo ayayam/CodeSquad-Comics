@@ -2,38 +2,39 @@
 <%- include('../partials/nav') -%>
 
         <div class="hunter-hunter">
+            <!-- <% for (book of books)  { %>     -->
             <div class="top-half">
-                <!-- <div class="title"><span>HUNTER X HUNTER VOL. 1</span>
-                    </div> -->
-                <h1 class="hunter-title"><%= data.title %></h1>    
+            
+                <h1 class="hunter-title"><%= book.title %></h1>    
                 
-                <img class="gon-cover" src="./books/<%= data.image._id %>" alt="gon on the cover of hunter X hunter volume one">
+                <img class="gon-cover" src="/images/<%= book.image %>" alt="<%= book.title %>">
             </div>
 
             <div class="bottom-half">
                 <p class="hunter-data"><span class="bold-underline">Title:</span>
-                    <span class="italics"><%= data.title %>></span>
+                    <span class="italics"><%= book.title %></span>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Author:</span>
-                    <%= data.author %>
+                    <%= book.author %>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Publisher:</span>
-                    <%= data.publisher %>
+                    <%= book.publisher %>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Genre:</span>
-                    <%= data.genre %>
+                    <%= book.genre %>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Number of pages:</span>
-                    <%= data.pages %>
+                    <%= book.pages %>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Rating:</span>
-                    <%= data.rating %>
+                    <%= book.rating %>
                 </p>
                 <p class="hunter-data"><span class="bold-underline">Synopsis:</span>
-                    <%= data.synopsis %>
+                    <%= book.synopsis %>
                 </p>
+            
             </div>
-
+        <!-- <% } %>     -->
         </div>
 
 <%- include('../partials/footer') -%>

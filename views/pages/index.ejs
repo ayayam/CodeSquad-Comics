@@ -16,16 +16,16 @@
     </section>
 
     <div class="comic-collection">
-        <% for (book of data) { %>
+        <% for (book of books) { %>
             <figure class="comic">
-                <a href="book/<%= book._id %>">
-                    <img src="<%= data.image._id %>" alt="" style="width: 200px">
+                <a href="./books/<%= book._id %>">
+                    <img src="./images/<%= book.image %>" alt="<%= book.title %>" style="width: 200px">
                 </a>
                 <figcaption class="comic-info">
                     <p><em><%= book.title %></em></p>
                     <p><%= book.author %></p>
                     <p><%= book.rating %></p>
-                    <a class="details" href="book/<%= book._id">Details</a>
+                    <a class="details" href="./books/<%= book._id %>">Details</a>
                 </figcaption>
             </figure>
         <% } %>

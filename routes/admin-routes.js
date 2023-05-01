@@ -10,6 +10,7 @@ router.route('/create-book')
  
 router.route('/update-book')
     .get(adminController.update_book);
+    
     // app.get('/admin-console/update-book/:id', (req, res) => {
 //     res.render('pages/update', {
 

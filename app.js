@@ -1,22 +1,24 @@
 const express = require('express');
 const morgan = require('morgan');
+
 const app = express();
 const PORT = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
-const indexRoutes = require('./routes/index-routes');
+
+app.use(morgan('combined'));
+app.use(methodOverride('_method'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+
 
 app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(morgan('combined'));
-app.use(methodOverride('_method'));
+
 app.use(express.urlencoded({ extended:true }));
-app.use(express.json());
+const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
-// app.use('/', (req, res) => {
-//     res.render(indexRoutes)
-// });
+
 
 app.listen(PORT, () => {
     console.log(`Server is listening on ${PORT}`);
