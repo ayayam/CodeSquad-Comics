@@ -1,7 +1,6 @@
 <%- include('../partials/head') -%>
 <%- include('../partials/nav') -%>
       
-
     <section class="main-container index-top">
         <h1 class="index-top-title">CODESQUAD COMICS</h1>
         <p class="index-top-p">CodeSquad Comics is a collection of graphic novels read by YOUR NAME. The site is intended to display comic book covers along with information about each
@@ -25,7 +24,7 @@
                     <p><em><%= book.title %></em></p>
                     <p><%= book.author %></p>
                     <p><%= book.rating %></p>
-                    <a class="details" href="./books/<%= book._id %>">Details</a>
+                    <p class="details"><a href="./books/<%= book._id %>">Details</a></p>
                 </figcaption>
             </figure>
         <% } %>
