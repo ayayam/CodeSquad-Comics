@@ -4,7 +4,7 @@
     <div class="main-container update-body">
         <h1 class="update-title">UPDATE COMIC</h1>
 
-        <form class="form update-form" action="book" method="POST">
+        <form class="form update-form" action="/books/<%= foundBook._id %>?_method=PUT" method="POST">
             <label for="edit-image">Comic Book Coverpage</label>
             <input type="text" id="edit-image" class="temp-img"></input>
         <ul>

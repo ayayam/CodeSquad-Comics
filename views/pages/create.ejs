@@ -3,7 +3,7 @@
 
         <div class="main-container create-body">
         <h1 class="create-body-title">CREATE NEW COMIC</h1>
-        <form class="form create-form" action="book" method="POST">
+        <form class="form create-form" action="/books/<%= foundBook._id %>?_method=PUT" method="POST">
             <br>
             <label for="edit-image">Comic Book Coverpage</label>
             <input type="text" id="edit-image" class="temp-img"></input>

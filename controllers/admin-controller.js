@@ -4,7 +4,7 @@ const {v4: uuid} = require('uuid');
 module.exports = {
     admin_console: (req, res) => {
         res.render('pages/admin', {
-
+            data:data
         });
     },
     create_book: (req, res) => {
