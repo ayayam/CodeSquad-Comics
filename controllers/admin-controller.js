@@ -9,6 +9,7 @@ module.exports = {
     },
     create_book: (req, res) => {
         res.render('pages/create', {
+            data: data
         });
         const { _id = uuid(), title, author, publisher, genre, pages, rating, synopsis } = request.body;
         data.push({_id, title, author, publisher, genre, pages, rating, synopsis});

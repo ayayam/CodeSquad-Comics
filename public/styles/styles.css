@@ -327,6 +327,7 @@ td {
     width: fit-content;
     margin: auto;
     display: block;
+    cursor: pointer;
 }
 
 .blue-button {
@@ -336,6 +337,7 @@ td {
     width: fit-content;
     margin: auto;
     display: block;
+    cursor: pointer;
 }
 
 /* CREATE.HTML */
