@@ -13,13 +13,13 @@ module.exports = {
         });
     },
     create_book_post: (req, res) => {
-        const { _id=uuid(), title, author, publisher, genre, pages, rating, synopsis } = request.body;
+        const { _id=uuid(), title, author, publisher, genre, pages, rating, synopsis } = req.body;
         data.push({_id, title, author, publisher, genre, pages, rating, synopsis});
         res.redirect('/admin-console');
     },
     book_update_put: (req, res) => {
-        const {_id} = request.params;
-        const {title, author, publisher, genre, pages, rating, synopsis} = request.body;
+        const {_id} = req.params;
+        const {title, author, publisher, genre, pages, rating, synopsis} = req.body; //form itself
         const foundBook = data.find(book => book._id === String(_id));
 
         foundBook.title = title;
@@ -33,10 +33,10 @@ module.exports = {
         res.redirect('/admin-console');
     },
     book_delete: (req, res) => {
-        const { _id } = request.params;
+        const { _id } = req.params;
         const foundBook = data.find(book => book._id === String(_id));
         const index = data.indexOf(foundBook);
         data.splice(index, 1);
-        response.redirect('admin-console');
+        res.redirect('/admin-console');
     }
 }
