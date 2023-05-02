@@ -7,6 +7,7 @@
     --white: #fff;
     --hnf-font: 'Fredericka the Great', cursive;
     --main-font: 'Open Sans', sans-serif;
+    
 }
 
 /* Google Fonts */
@@ -85,6 +86,10 @@ h2 {
     font-family: var(--hnf-font);
     padding-top: 2%;
     margin-bottom: 0;
+}
+
+.fas {
+    color: var(--yellow);
 }
 
 /* Header navbar */

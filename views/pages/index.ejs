@@ -15,7 +15,7 @@
     </section>
 
     <div class="comic-collection">
-        <% for (book of books) { %>
+        <% for (book of data) { %>
             <figure class="comic">
                 <a href="./books/<%= book._id %>">
                     <img src="./images/<%= book.image %>" alt="<%= book.title %>" style="width: 200px">
@@ -23,7 +23,11 @@
                 <figcaption class="comic-info">
                     <p><em><%= book.title %></em></p>
                     <p><%= book.author %></p>
-                    <p><%= book.rating %></p>
+                    <div class="stars">
+                        <% for(let i = 0; i < book.rating; i++) {%>
+                          <i class="fas fa-star"></i>
+                        <% }%>
+                      </div>
                     <p class="details"><a href="./books/<%= book._id %>">Details</a></p>
                 </figcaption>
             </figure>
