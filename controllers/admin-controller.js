@@ -13,8 +13,10 @@ module.exports = {
         });
     },
     update_book: (req, res) => {
+        const { _id } = request.params;
+        const foundBook = data.find(book => book._id === _id)
         res.render('pages/update', {
-            data: data
+            foundBook: foundBook
         })
     }
     //     const { _id = uuid(), title, author, publisher, genre, pages, rating, synopsis } = request.body;
@@ -24,7 +26,7 @@ module.exports = {
     // update_book: (req, res) => {
     //     const { _id } = request.params;
     //     const { title, author, publisher, genre, pages, rating, synopsis } = request.body;
-    //     const foundBook = books.find(book => book._id === String(_id));
+    //     const foundBook = data.find(book => book._id === String(_id));
     //     res.render('pages/update', {
     //         foundBook: foundBook,
     //     });

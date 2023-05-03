@@ -7,14 +7,10 @@ router.route('/')
 
 router.route('/admin-console/create-book')
     .get(adminController.create_book);
-    
 
-// router.route('/create-book')
-//     .get(adminController.create_book);
  
-// router.route('/update-book')
-//     .get(adminController.update_book);
-    
+router.route('admin-console/update-book/:id')
+    .get(adminController.update_book)
 
 module.exports = router;
 

@@ -10,6 +10,5 @@ router.route('/:_id')
     .put(bookController.book_update_put)
     .delete(bookController.book_delete)
 
-    // .post connected to create method
 
 module.exports = router;

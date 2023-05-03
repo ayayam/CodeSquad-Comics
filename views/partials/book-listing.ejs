@@ -3,8 +3,9 @@
 <tr>
 
     <td><%= book.title %></td>
-    <td><input type="button" class="blue-button" value="EDIT" onclick="location.href='admin'"></td>
-    <td><input type="button" class="yellow-button" value="DELETE"></td>
-    
+    <td><input type="button" class="blue-button" value="EDIT" onclick="location.href='update-book/:_id'"></td>
+    <form action="/books/<%= book._id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded">
+        <td><button type="submit" class="yellow-button">Delete</button></td>
+    </form>
 </tr>
 <% } %>
