@@ -4,18 +4,18 @@
     <div class="main-container update-body">
         <h1 class="update-title">UPDATE COMIC</h1>
 
-        <form class="form update-form" action="/books?_method=PUT" method="POST">
+        <form class="form update-form" action="/books/<%= book._id %>?_method=PUT" method="POST">
             <label for="edit-image">Comic Book Coverpage</label>
             <input type="text" id="edit-image" class="temp-img"></input>
         <ul>
             <li class="form-list">
                 <label for="title" class="label">Title:</label>
-                <input type="text" class="input" id="title" name="title" value="<%= data.title %>">
+                <input type="text" class="input" id="title" name="title" value="<%= foundBook.title %>">
             </li>
         <br>
             <li class="form-list">
                 <label for="author" class="label">Author:</label>
-                <input type="text" class="input" id="author" name="author" value="<%= data.author %>">
+                <input type="text" class="input" id="author" name="author" value="<%= foundBook.author %>">
             </li>
         <br>
             <li class="form-list">
@@ -37,22 +37,22 @@
         <br>
             <li class="form-list">
                 <label for="genre" class="label">Genre:</label>
-                <input type="text" class="input" id="genre" name="genre" value="<%= data.genre %>">
+                <input type="text" class="input" id="genre" name="genre" value="<%= foundBook.genre %>">
             </li>
         <br>
             <li class="form-list">
                 <label for="pages" class="label">Number of pages:</label>
-                <input type="text" class="input" id="pages" name="pages" value="<%= data.pages %>">
+                <input type="text" class="input" id="pages" name="pages" value="<%= foundBook.pages %>">
             </li>
         <br>
             <li class="form-list">
                 <label for="rating" class="label">Rating:</label>
-                <input type="text" class="input" id="rating" name="rating" value="<%= data.rating %>" placeholder="rating stored in database">
+                <input type="text" class="input" id="rating" name="rating" value="<%= foundBook.rating %>" placeholder="rating stored in database">
             </li>
         <br>
             <li class="form-list textarea">
                 <label for="synopsis" class="label">Synopsis:</label>
-                <textarea id="synopsis" class="synopsis" name="synopsis" value="<%= data.synopsis %>" placeholder="synopsis value stored in database"></textarea>
+                <textarea id="synopsis" class="synopsis" name="synopsis" value="<%= foundBook.synopsis %>" placeholder="synopsis value stored in database"></textarea>
             </li>
         <br>
             <li class="submit-button">

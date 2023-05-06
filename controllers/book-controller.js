@@ -22,17 +22,16 @@ module.exports = {
         const {title, author, publisher, genre, pages, rating, synopsis} = req.body; //form itself
         const foundBook = data.find(book => book._id === String(_id));
 
-        // foundBook._id = _id;
-        // foundBook.title = title;
-        // foundBook.author = author;
-        // foundBook.publisher = publisher;
-        // foundBook.genre = genre;
-        // foundBook.pages = pages;
-        // foundBook.rating = rating;
-        // foundBook.synopsis = synopsis
-        if (title != "") {
-            res.redirect('/admin-console');
-        }    
+        foundBook.title = title;
+        foundBook.author = author;
+        foundBook.publisher = publisher;
+        foundBook.genre = genre;
+        foundBook.pages = pages;
+        foundBook.rating = rating;
+        foundBook.synopsis = synopsis
+
+        res.redirect('/admin-console'); 
+        
     },
     book_delete: (req, res) => {
         const { _id } = req.params;

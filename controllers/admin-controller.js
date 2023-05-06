@@ -4,7 +4,7 @@ const {v4: uuid} = require('uuid');
 module.exports = {
     admin_console: (req, res) => {
         res.render('pages/admin', {
-            data:data
+            data: data
         });
     },
     create_book: (req, res) => {
@@ -13,8 +13,8 @@ module.exports = {
         });
     },
     update_book: (req, res) => {
-        const { _id } = request.params;
-        const foundBook = data.find(book => book._id === _id)
+        const { _id } = req.params;
+        const foundBook = data.find(book => book._id === String(_id))
         res.render('pages/update', {
             foundBook: foundBook
         })

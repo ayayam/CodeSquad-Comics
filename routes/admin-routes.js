@@ -9,7 +9,7 @@ router.route('/admin-console/create-book')
     .get(adminController.create_book);
 
  
-router.route('admin-console/update-book/:id')
+router.route('/update-book/:_id')
     .get(adminController.update_book)
 
 module.exports = router;
