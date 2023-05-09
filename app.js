@@ -1,23 +1,22 @@
 const express = require('express');
 const morgan = require('morgan');
-
 const app = express();
 const PORT = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
+
+app.set('view engine', 'ejs');
 
 app.use(morgan('combined'));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-
-app.set('view engine', 'ejs');
-
-
 app.use(express.urlencoded({ extended:true }));
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
+
+require('./config/connection');
 
 
 app.listen(PORT, () => {

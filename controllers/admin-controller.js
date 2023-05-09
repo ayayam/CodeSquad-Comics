@@ -1,11 +1,18 @@
-const data = require('../data/data');
-const {v4: uuid} = require('uuid');
+// const data = require('../data/data');
+const Comic = require('../models/comic-model');
+// const {v4: uuid} = require('uuid');
 
 module.exports = {
     admin_console: (req, res) => {
-        res.render('pages/admin', {
-            data: data
-        });
+        Comic.find({}, (error, comicSchema) => {
+            if (error) {
+                return error;
+            } else {
+                res.render('pages/admin', {
+                    data: comicSchema
+                });
+            }
+        })
     },
     create_book: (req, res) => {
         res.render('pages/create', {
@@ -14,21 +21,14 @@ module.exports = {
     },
     update_book: (req, res) => {
         const { _id } = req.params;
-        const foundBook = data.find(book => book._id === String(_id))
-        res.render('pages/update', {
-            foundBook: foundBook
+        Comic.findOne({_id: _id}, (error, comicSchema) => {
+            if (error) {
+                return error;
+            } else {
+                res.render('pages/update', {
+                    foundBook: comicSchema
+                })
+            }
         })
     }
-    //     const { _id = uuid(), title, author, publisher, genre, pages, rating, synopsis } = request.body;
-    //     data.push({_id, title, author, publisher, genre, pages, rating, synopsis});
-    //     res.redirect('/admin-console');
-    // },
-    // update_book: (req, res) => {
-    //     const { _id } = request.params;
-    //     const { title, author, publisher, genre, pages, rating, synopsis } = request.body;
-    //     const foundBook = data.find(book => book._id === String(_id));
-    //     res.render('pages/update', {
-    //         foundBook: foundBook,
-    //     });
-    // }
 }
