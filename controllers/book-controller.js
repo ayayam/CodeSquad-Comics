@@ -11,8 +11,8 @@ module.exports = {
                    books: books 
                 })
             })
-            .catch((err) => {
-                console.log(err);
+            .catch((error) => {
+                console.log(error);
             })
     },
     create_book_post: (req, res) => {
@@ -34,25 +34,37 @@ module.exports = {
     book_update_put: (req, res) => {
         const {_id} = req.params;
         const {title, author, publisher, genre, pages, rating, synopsis} = req.body; //form itself
-        Book.findByIdAndUpdate(_id, {$set: {
+        Comics.findByIdAndUpdate(_id, {$set: {
             title: title,
             author: author,
             publisher: publisher,
             genre: genre,
             rating: rating,
             synopsis: synopsis
-        }}, {new: true}, error => {
-            if (error) {
-                return error;
-            } else {
-                res.redirect('/admin-console'); 
-            }
-        })  
+        }}, {new: true})
+            .then(() => {
+                res.redirect('/admin-console')
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        // , error => {
+        //     if (error) {
+        //         return error;
+        //     } else {
+        //         res.redirect('/admin-console'); 
+        //     }
+        // })  
     },
     book_delete: (req, res) => {
         const { _id } = req.params;
-        Comic.deleteOne({_id: _id})
-            .then()
+        Comics.deleteOne({_id: _id})
+            .then(() => {
+                res.redirect('/admin-console')
+            })
+            .catch(error => {
+                console.log(error)
+            })
         // , error => {
         //     if (error) {
         //         return error;
