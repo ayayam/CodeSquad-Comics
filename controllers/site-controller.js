@@ -1,26 +1,22 @@
 
-const Comic = require('../models/comic-model');
+const Comics = require('../models/comic-model');
 
 module.exports = {
     index: (req, res) => {
-        Comic.find({}, (error, comicSchema) => {
-            if (error) {
-                return error;
-            } else {
+        Comics.find({})
+            .then((comics) => {
                 res.render('pages/index', {
-                    data: comicSchema,
+                   comics: comics
                 });
-            }
-        })
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     },
     about: (req, res) => {
-        res.render('pages/about', {
-            
-        });
+        res.render('pages/about')
     },
     login: (req, res) => {
-        res.render('pages/login', {
-
-        });
+        res.render('pages/login')
     }
 }

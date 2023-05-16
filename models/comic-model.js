@@ -34,6 +34,6 @@ const comicSchema = new Schema({
     }
 })
 
-const Comic = mongoose.model('Comics', comicSchema);
+const Comics = mongoose.model('Comics', comicSchema);
 
-module.exports = Comic;
+module.exports = Comics;

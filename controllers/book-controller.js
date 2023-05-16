@@ -1,23 +1,23 @@
 
 // const {v4: uuid} = require('uuid');
-const Comic = require('../models/comic-model');
+const Comics = require('../models/comic-model');
 
 module.exports = {
     book_detail: (req, res) => {
         const {_id}  = req.params;
-        Comic.findOne({_id: _id}, (error, comicSchema) => {
-            if (error) {
-                return error;
-            } else {
+        Comics.findOne({_id: _id})
+            .then((books) => {
                 res.render('pages/book', {
-                    books: comicSchema,
-                });
-            }
-        })
+                   books: books 
+                })
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     },
     create_book_post: (req, res) => {
         const { title, author, publisher, genre, pages, rating, synopsis } = req.body;
-        const newComic = new Comic ({
+        const newComic = new Comics ({
             title: title,
             author: author,
             publisher: publisher,
@@ -51,12 +51,14 @@ module.exports = {
     },
     book_delete: (req, res) => {
         const { _id } = req.params;
-        Comic.deleteOne({_id: _id}, error => {
-            if (error) {
-                return error;
-            } else {
-                res.redirect('/admin-console');
-            }
-        })
+        Comic.deleteOne({_id: _id})
+            .then()
+        // , error => {
+        //     if (error) {
+        //         return error;
+        //     } else {
+        //         res.redirect('/admin-console');
+        //     }
+        // })
     }
 }

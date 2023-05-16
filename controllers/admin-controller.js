@@ -4,31 +4,32 @@ const Comic = require('../models/comic-model');
 
 module.exports = {
     admin_console: (req, res) => {
-        Comic.find({}, (error, comicSchema) => {
-            if (error) {
-                return error;
-            } else {
+        Comic.find() 
+            .then(data => {
                 res.render('pages/admin', {
-                    data: comicSchema
+                    data: data
                 });
-            }
-        })
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     },
+
+
     create_book: (req, res) => {
         res.render('pages/create', {
-            data: data
         });
     },
     update_book: (req, res) => {
         const { _id } = req.params;
-        Comic.findOne({_id: _id}, (error, comicSchema) => {
-            if (error) {
-                return error;
-            } else {
+        Comic.findOne({_id: _id})
+            .then(foundBook => {
                 res.render('pages/update', {
-                    foundBook: comicSchema
+                    foundBook: foundBook
                 })
-            }
-        })
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 }
