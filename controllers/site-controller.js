@@ -58,7 +58,8 @@ module.exports = {
 
     google_get: passport.authenticate('google', { scope: ['openid', 'profile', 'email']}),
 
-    google_redirect_get: ['google', {failureRedirect: '/login'}, function(req, res) {
+    google_redirect_get: [
+        passport.authenticate('google', {failureRedirect: '/login'}), function(req, res) {
         res.redirect('/admin-console');
     }],
 
