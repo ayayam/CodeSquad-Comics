@@ -3,9 +3,19 @@
 
         <div class="main-container admin-container">
         <section class="admin-container-top">
+            <div class="logout">
+                <button class="new-comic yellow-button">
+                    <a href="/logout" class="no-underline">LOGOUT</a>
+                </button>
+            </div>
+            
+
             <h1 class="admin-container-title">ADMIN PAGE</h1>
             <div class="admin-top-button">
-                <input href="./admin-console/create-book" type="button" class="new-comic yellow-button" value="ADD NEW COMIC">
+                <button class="yellow-button">
+                    <a href="./admin-console/create-book" class="no-underline">ADD NEW COMIC</a>
+                </button>
+                <!-- <input onclick="location.href='admin-console/create-book'" type="button" class="yellow-button" value="ADD NEW COMIC"> -->
             </div>
         </section>
         <br>
@@ -19,66 +29,8 @@
                 </tr>
             </thead>
             <tbody class="admin-table-body">
-                <tr>
-                    <td>Batman: The Dark Knight Returns</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Black Panther: A Nation Under Our Feet Book 1</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Fun Home: A Family Tragicomic</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Hunter X Hunter Vol. 1</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Lumberjanes Vol. 1</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>March: Book One</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>One Piece, Vol. 1: Romance Dawn</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Parable of the Sower</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Queer: A Graphic History</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Wake: The Hidden History of Women-Led Slave Revolts</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
-                <tr>
-                    <td>Watchmen</td>
-                    <td><input type="button" class="blue-button" value="EDIT"></td>
-                    <td><input type="button" class="yellow-button" value="DELETE"></td>
-                </tr>
+                <%- include('../partials/book-listing') -%> 
+
             </tbody>
         </table>
         </div>
