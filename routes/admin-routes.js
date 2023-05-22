@@ -5,7 +5,7 @@ const adminController = require('../controllers/admin-controller');
 router.route('/')
     .get(adminController.admin_console);
 
-router.route('/admin-console/create-book')
+router.route('/create-book')
     .get(adminController.create_book);
 
  

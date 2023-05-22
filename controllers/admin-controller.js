@@ -4,7 +4,7 @@ const Comic = require('../models/comic-model');
 
 module.exports = {
     admin_console: (req, res) => {
-        if (req.isAuthenticated()) {
+        // if (req.isAuthenticated()) {
             Comic.find() 
                 .then(data => {
                     res.render('pages/admin', {
@@ -14,19 +14,18 @@ module.exports = {
                 .catch((err) => {
                     console.log(err);
                 })            
-        }
+        // }
     },
 
 
     create_book: (req, res) => {
-        if (req.isAuthenticated()) {
-            res.render('pages/create', {
-            });
-        }
+        // if (req.isAuthenticated()) {
+            res.render('pages/create');
+        // }
     },
 
     update_book: (req, res) => {
-        if (req.isAuthenticated()) {
+        // if (req.isAuthenticated()) {
             const { _id } = req.params;
             Comic.findOne({_id: _id})
                 .then(foundBook => {
@@ -37,6 +36,6 @@ module.exports = {
                 .catch(error => {
                     console.log(error);
                 });
-        }
+        // }
     }
 }

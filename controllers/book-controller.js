@@ -1,5 +1,4 @@
 
-// const {v4: uuid} = require('uuid');
 const Comics = require('../models/comic-model');
 
 module.exports = {

@@ -24,17 +24,17 @@ module.exports = {
     },
 
     login_post: (req, res) => {
-        const {username, password} = request.body;
+        const {username, password} = req.body;
         const user = new User({
             username: username,
             password: password
         });
-        request.login(user, (error) => {
+        req.login(user, (error) => {
             if (error) {
                 console.log(error)
             } else {
                 passport.authenticate('local')(req, res, () => {
-                    response.redirect('/admin-console');
+                    res.redirect('/admin-console');
                 });
             }    
         });
@@ -45,9 +45,10 @@ module.exports = {
     },
 
     register_post: (req, res) => {
-        User.register({username: request.body.username}, request.body.password, (error, user) => {
+        User.register({username: req.body.username}, req.body.password, (error, user) => {
             if (error) {
                 console.log(error);
+                res.redirect('/register')
             } else {
                 passport.authenticate('local')(req, res, () => {
                     res.redirect('/admin-console');
@@ -61,12 +62,13 @@ module.exports = {
     google_redirect_get: [
         passport.authenticate('google', {failureRedirect: '/login'}), function(req, res) {
         res.redirect('/admin-console');
+        console.log("You are logged in");
     }],
 
     logout: (req, res) => {
         req.logout(function(err) {
             if (err) {return next(err);}
-            response.redirect('/');
+            res.redirect('/');
         })
     }
 }

@@ -19,7 +19,7 @@ router.route('/register')
 router.route('/auth/google')
     .get(siteController.google_get)
 
-router.route('/auth/google/comics')
+router.route('/auth/google/admin')
     .get(siteController.google_redirect_get)
 
 router.route('/logout')

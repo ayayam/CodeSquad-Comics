@@ -2,7 +2,14 @@
         
 <tr>
     <td><%= book.title %></td>
-        <td><button type="submit" class="blue-button" onclick="location.href='./update-book/<%= book._id %>'">Edit</button></td>
+        <!-- <td><button type="submit" class="blue-button" onclick="location.href='/update-book/<%= book._id %>'">Edit</button></td> --> 
+
+        <!-- TEMP FIX -->
+        <!-- THIS SHOULD WORK -->
+    <td><a href="/admin-console/update-book/<%= book._id %>">
+        <button class="blue-button">Edit</button>
+    </a></td>
+
         <!-- <td><button type="submit"><a class="blue-button" href="./update-book/<%= book._id %>">Edit</a></button></td> -->
         <!-- <td><input type="button" class="blue-button" value="EDIT" onclick="location.href='books/:_id'"></td> -->
 
