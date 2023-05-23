@@ -26,3 +26,4 @@ async function main() {
   await mongoose.connect(process.env.DB_URL)};
 
 // :)
+// random comment
