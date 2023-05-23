@@ -27,7 +27,7 @@ passport.use(User.createStrategy());
 async function runUsers() {
     await mongoose.connect(`${process.env.DB_URL}`)
     mongoose.model('Users', userSchema);
-    await mongoose.model('Users').findOne();
+    await mongoose.model('Users').find();
 }
 runUsers();
 

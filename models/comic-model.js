@@ -39,7 +39,7 @@ const Comics = mongoose.model('Comics', comicSchema);
 async function runComics() {
     await mongoose.connect(`${process.env.DB_URL}`)
     mongoose.model('Comics', comicSchema);
-    await mongoose.model('Comics').findOne();
+    await mongoose.model('Comics').find();
 }
 
 runComics();
