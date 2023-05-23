@@ -22,9 +22,15 @@ userSchema.plugin(mongooseFindOrCreate);
 
 const User = mongoose.model('Users', userSchema);
 
-
-
 passport.use(User.createStrategy());
+
+async function runUsers() {
+    await mongoose.connect(`${process.env.DB_URL}`)
+    mongoose.model('Users', userSchema);
+    await mongoose.model('Users').findOne();
+}
+runUsers();
+
 passport.serializeUser(function(user, cb) {
     process.nextTick(function() {
         cb(null, { id: user.id, username: user.username, name: user.displayName });
@@ -40,10 +46,10 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL:"http://localhost:3000/auth/google/admin"
+    callbackURL:"https://rich-red-sea-urchin-gear.cyclic.app/auth/google/admin"
 },
-function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ googleID: profile.id }, function(err, user) {
+function(accessToken, refreshToken, email, cb) {
+    User.findOrCreate({ googleID: email.id }, function(err, user) {
         return cb(err, user);
     });
 }));
