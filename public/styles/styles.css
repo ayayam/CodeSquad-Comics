@@ -71,7 +71,11 @@ form {
 
 .form-list-img {
     display: flex;
-    
+    margin-left: 10px;
+}
+.label-img {
+    position: absolute;
+    bottom: 0;
 }
 
 textarea {
