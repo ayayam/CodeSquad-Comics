@@ -63,6 +63,7 @@ form {
 .synopsis {
     width: 36vw;
     min-width: 31vw;
+    margin-left: 6px;
 }
 
 .form-list {
