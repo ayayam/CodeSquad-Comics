@@ -19,7 +19,7 @@ module.exports = [
     // rating: 5,
     // synopsis: "This Hugo Award-winning graphic novel chronicles the fall from grace of a group of super-heroes plagued by all-too-human failings. Along the way, the concept of the super-hero is dissected as the heroes are stalked by an unknown assassin.\nOne of the most influential graphic novels of all time and a perennial best-seller, Watchmen has been studied on college campuses across the nation and is considered a gateway \"title\", leading readers to other graphic novels such as V for Vendetta, Batman: The Dark Knight Returns, and The Sandman series.",
     // image: "watchmen.jpg"
-  },{ 
+  // },{ 
     // title: "Hunter X Hunter Vol. 1",
     // author: "Yoshihiro Togashi",
     // publisher: "VIZ Media LLC",
@@ -74,7 +74,7 @@ module.exports = [
   //   synopsis: "The world we knew is gone. The world of commerce and frivolous necessity has been replaced by a world of survival and responsibility. An epidemic of apocalyptic proportions has swept the globe, causing the dead to rise and feed on the living. In a matter of months society has crumbled: no government, no grocery stores, no mail delivery, no cable TV. In a world ruled by the dead, the survivors are forced to finally start living.",
   //   image: "the-walking-dead.jpg"
   // },{ 
-    title: "March: Book One",
+    // title: "March: Book One",
   //   author: "John Lewis",
   //   publisher: "Top Shelf Productions",
   //   genre: "autobiography",

@@ -47,13 +47,6 @@ module.exports = {
             .catch(error => {
                 console.log(error)
             })
-        // , error => {
-        //     if (error) {
-        //         return error;
-        //     } else {
-        //         res.redirect('/admin-console'); 
-        //     }
-        // })  
     },
     book_delete: (req, res) => {
         const { _id } = req.params;

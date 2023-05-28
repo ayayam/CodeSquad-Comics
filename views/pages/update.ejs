@@ -7,7 +7,7 @@
         <form class="form update-form" action="/books/<%= foundBook._id %>?_method=PUT" method="POST">
             <label for="edit-image">Comic Book Coverpage:</label>
             <!-- <input type="text" id="edit-image" class="temp-img"> -->
-            <img src="/images/<%= foundBook.image %>" alt="<%= foundBook.title %>">    
+            <img style="width: 200px" src="/images/<%= foundBook.image %>" alt="<%= foundBook.title %>">    
         <ul>
             <li class="form-list">
                 <label for="title" class="label">Title:</label>
