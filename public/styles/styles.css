@@ -55,7 +55,7 @@ form {
 
 .thumbnail {
     width: 200px;
-    
+    height: 291px;
 }
 
 .select,
@@ -67,6 +67,11 @@ form {
 .form-list {
     display: flex;
     align-self: flex-end;
+}
+
+.form-list-img {
+    display: flex;
+    
 }
 
 textarea {
