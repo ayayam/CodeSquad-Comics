@@ -5,9 +5,11 @@
         <h1 class="update-title">UPDATE COMIC</h1>
 
         <form class="form update-form" action="/books/<%= foundBook._id %>?_method=PUT" method="POST">
-            <label for="edit-image">Comic Book Coverpage:</label>
-            <!-- <input type="text" id="edit-image" class="temp-img"> -->
-            <img style="width: 200px" src="/images/<%= foundBook.image %>" alt="<%= foundBook.title %>">    
+            <li class="form-list">            
+                <label class="label" for="edit-image">Comic Book Coverpage:</label>
+                <img class="thumbnail" src="/images/<%= foundBook.image %>" alt="<%= foundBook.title %>">    
+            </li>
+
         <ul>
             <li class="form-list">
                 <label for="title" class="label">Title:</label>

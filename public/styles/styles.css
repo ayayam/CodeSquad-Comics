@@ -53,6 +53,11 @@ form {
     margin-left: 1%;
 }
 
+.thumbnail {
+    width: 200px;
+    
+}
+
 .select,
 .synopsis {
     width: 36vw;
