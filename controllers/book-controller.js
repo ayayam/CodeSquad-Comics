@@ -57,12 +57,5 @@ module.exports = {
             .catch(error => {
                 console.log(error)
             })
-        // , error => {
-        //     if (error) {
-        //         return error;
-        //     } else {
-        //         res.redirect('/admin-console');
-        //     }
-        // })
     }
 }
