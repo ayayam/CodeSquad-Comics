@@ -6,6 +6,7 @@ const PORT = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const MemoryStore = require('memorystore')(session)
 const passport = require('passport');
 
 
@@ -18,6 +19,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended:true }));
 
 app.use(session({
+  cookie: { maxAge: 86400000 },
+  store: new MemoryStore({
+    checkPeriod: 86400000
+  }),
   secret: process.env.SECRET_KEY,
   resave: false,
   saveUninitialized: false
