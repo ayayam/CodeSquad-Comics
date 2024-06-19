@@ -23,9 +23,9 @@ app.use(session({
   store: new MemoryStore({
     checkPeriod: 86400000
   }),
-  secret: process.env.SECRET_KEY,
+  secret: process.env.SESSION_SECRET,
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: true
 }))
 
 app.use(passport.initialize());
