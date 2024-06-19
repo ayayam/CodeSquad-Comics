@@ -1,12 +1,13 @@
 require('dotenv').config();
 const express = require('express');
+const session = require('express-session');
+const MemoryStore = require('memorystore')(session)
 const morgan = require('morgan');
 const app = express();
 const PORT = 3000;
 const path = require('path');
 const methodOverride = require('method-override');
-const session = require('express-session');
-const MemoryStore = require('memorystore')(session)
+
 const passport = require('passport');
 
 
@@ -23,7 +24,7 @@ app.use(session({
   store: new MemoryStore({
     checkPeriod: 86400000
   }),
-  secret: process.env.SESSION_SECRET,
+  secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true
 }))
