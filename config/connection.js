@@ -23,7 +23,8 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.DB_URL).then(() => console.log('Connected!'));
+  await mongoose.connect(process.env.DB_URL, {useNewUrlParser: true})
+  .then(() => console.log('Connected!'));
 }
 
 // :)
