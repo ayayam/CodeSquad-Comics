@@ -1,4 +1,27 @@
-const mongoose = require('mongoose');
+const { MongoClient } = require("mongodb");
+ 
+// Replace the following with your Atlas connection string                                                                                                                                        
+const url = process.env.DB_URL;
+
+// Connect to your Atlas cluster
+const client = new MongoClient(url);
+
+async function run() {
+    try {
+        await client.connect();
+        console.log("Successfully connected to Atlas");
+
+    } catch (err) {
+        console.log(err.stack);
+    }
+    finally {
+        await client.close();
+    }
+}
+
+run().catch(console.dir);
+
+// const mongoose = require('mongoose');
 
 // mongoose.set("strictQuery", false);
 
@@ -20,13 +43,15 @@ const mongoose = require('mongoose');
 
 // connectDatabase();
 
-main().catch(err => console.log(err));
+// main().catch(err => console.log(err));
 
-async function main() {
-  await mongoose.connect(process.env.DB_URL, {useNewUrlParser: true})
-  .then(() => console.log('Connected!'));
-}
+// async function main() {
+//   await mongoose.connect(process.env.DB_URL)
+//   console.log("connected to MongoDB");
+// };
 
-// :)
-// random comment
-// random comment 2
+// async function main() {
+//   await mongoose.connect(process.env.DB_URL, {useNewUrlParser: true})
+//   .then(() => console.log('Connected!'));
+// }
+
