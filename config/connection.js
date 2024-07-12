@@ -10,6 +10,7 @@ async function run() {
     try {
         await client.connect();
         console.log("Successfully connected to Atlas");
+        await  listDatabases(client);
 
     } catch (err) {
         console.log(err.stack);
@@ -18,6 +19,13 @@ async function run() {
         await client.close();
     }
 }
+
+async function listDatabases(client){
+  databasesList = await client.db().admin().listDatabases();
+
+  console.log("Databases:");
+  databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
 
 run().catch(console.dir);
 
